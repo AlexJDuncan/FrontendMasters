@@ -9,7 +9,5 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {},
-  "dependencies": {
-    "prettier": "^2.4.1"
-  }
+  "dependencies": {}
 }
