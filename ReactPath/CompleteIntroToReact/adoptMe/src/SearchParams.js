@@ -13,7 +13,7 @@ const SearchParams = () => {
         <label htmlFor="location">
           Location
           <input id="location"
-          // onChange={e => setLocation(e.target.value)}
+          // onChange={(e) => setLocation(e.target.value)}
           onChange={updateLocation}
           value={location}
           placeholder="Location" />
