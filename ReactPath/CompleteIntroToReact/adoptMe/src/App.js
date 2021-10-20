@@ -5,11 +5,17 @@ const Pet = () => {
     React.createElement("h3", {}, "Havanese"),
   ])
 }
+
 const App = () => {
   return React.createElement(
     "div",
     {},
-    React.createElement("h1", {}, "Adopt Me!")
+    [
+      React.createElement("h1", {}, "Adopt Me!"),
+      React.createElement(Pet),
+      React.createElement(Pet),
+      React.createElement(Pet),
+    ]
   );
 };
 
