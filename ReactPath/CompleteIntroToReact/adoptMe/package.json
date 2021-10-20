@@ -4,11 +4,15 @@
   "description": "practice",
   "main": "index.js",
   "scripts": {
-    "format": "prettier --write \"src/**/*.{js,jsx}\""
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "eslint-config-prettier": "^8.1.0"
+  },
   "dependencies": {
     "prettier": "^2.4.1"
   }
