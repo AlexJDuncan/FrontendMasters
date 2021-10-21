@@ -9,9 +9,11 @@ const SearchParams = () => {
   const [breed, setBreed] = useState("");
   const [pets, setPets] = useState([]);
 
+  const breeds = [];
+
   useEffect(() => {
     requestPets();
-  }, [])
+  }, []);
 
   async function requestPets() {
     const res = await fetch(
@@ -20,8 +22,6 @@ const SearchParams = () => {
     const json = await res.json();
     setPets(json.pets);
   }
-
-  const breeds = [];
 
   function updateLocation(e) {
     setLocation(e.target.value);
