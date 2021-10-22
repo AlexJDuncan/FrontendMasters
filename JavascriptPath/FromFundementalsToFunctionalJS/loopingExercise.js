@@ -14,14 +14,9 @@ const game = {
 }
 
 const loopObj = (game) => {
-  const name = [];
-  const color = [];
-
   for (let i = 0; i < game['suspects'].length; i++) {  //could do game.suspects.length instead
-    name.push(game['suspects'][i].name);
-    color.push(game['suspects'][i].color);
+    console.log(game['suspects'][i]);
   }
-  return name && color;
 }
 
 loopObj(game);
@@ -39,3 +34,22 @@ foo(game);
 for (let key in obj) {
   obj[key];
 }
+
+// Part 2
+// Loop through all the properies of the suspect objects in the suspects array, mark them if you think they are guilty
+
+const maybeGuilty = (game, color) => {
+  for (let i = 0; i < game.suspects.length; i++) {
+    if (game.suspects[i].color === color) {
+      game.suspects[i].guilty = true;
+    }
+    game.suspects[i].guilty= false;
+  }
+  return game;
+}
+
+maybeGuilty(game, red);
+maybeGuilty(game, orange);
+
+//vid solution
+
