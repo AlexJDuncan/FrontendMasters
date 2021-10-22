@@ -34,3 +34,8 @@ function foo(game) {
 }
 
 foo(game);
+
+//for in loop
+for (let key in obj) {
+  obj[key];
+}
