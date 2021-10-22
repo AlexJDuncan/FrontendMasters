@@ -52,4 +52,24 @@ maybeGuilty(game, red);
 maybeGuilty(game, orange);
 
 //vid solution
+var gameLoop = function() {
+  for (var i = 0; i < games.suspects.length; i++) {
+    for (var key in game.suspects[i]) {
+      if (game.suspects[i][key] === "Rusty") {
+        console.log('Found \'em !')
+      } else {
+        console.log('next time!')
+      }
+    }
+  }
+}
 
+// Part 3
+// Destructure the nested data structures inot 2 variables on "red" and one "orange"
+
+const firstColor = game.suspects[0].color;
+const secondColor = game.suspects[i].color;
+
+var [color, color2] = [suspects[0].color, suspect[1].color];
+
+var [{color: firstColor}, { color: secondColor }] = suspects;
