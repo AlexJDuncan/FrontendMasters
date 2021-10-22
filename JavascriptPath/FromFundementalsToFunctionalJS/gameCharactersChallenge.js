@@ -30,3 +30,18 @@ console.log(game);
 
 // video solution with student assistance
 
+var game = {};
+
+game.murderer = "??";
+
+game[weapons] = [
+  {type: 'lasers', location: 'lab'},
+  {type: 'angry cats', location: 'kennel'}, //this line in video has ... instead of location and kennel.  I added to appease eslint
+  'dish soap'
+];
+
+game.name = [];
+game.name[0] = 'Miss Scarlet';
+game.name.push('Mr. Green');
+
+
