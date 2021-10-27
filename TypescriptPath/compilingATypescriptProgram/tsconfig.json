@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "outDir": "dist", // where to put the TS files
+    "module": "CommonJs", // outputs code that Node can run
     "target": "ES2017" // which level of JS support to Target
   },
   "include": ["src"] // which files to compile
