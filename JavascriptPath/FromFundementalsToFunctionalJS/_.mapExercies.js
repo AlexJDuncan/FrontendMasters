@@ -23,3 +23,14 @@ _.map = function(list, callback) {
   }
   return result;
 }
+
+// using _.each to implement
+_.map = function(list, callback) {
+  const storage = [];
+
+  _.each(list, function(v, i, list) {
+    storage.push(v, i, list);
+  })
+
+  return storage;
+}
