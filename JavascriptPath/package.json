@@ -1,0 +1,15 @@
+{
+  "name": "javascriptpath",
+  "version": "1.0.0",
+  "description": "Repo for Frontend Masters Javascript Path courses",
+  "main": "index.js",
+  "dependencies": {
+    "underscore": "^1.13.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
