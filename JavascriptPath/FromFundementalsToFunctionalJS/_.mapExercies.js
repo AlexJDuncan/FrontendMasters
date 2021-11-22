@@ -11,13 +11,13 @@ let brokenWeapons = _.map(weapons, makeBroken);
 
 // rewrite _.map
 _.map = function(list, callback) {
-  let result = [];
+  const result = [];
   if (Array.isArray(list)) {
-    for (var i = 0; i < list.length; i++) {
+    for (let i = 0; i < list.length; i++) {
       result.push(callback(list[i], i, list));
     }
   } else {
-    for (var key in list) {
+    for (let key in list) {
       result.push(callback(list[key], key, list));
     }
   }
@@ -29,7 +29,7 @@ _.map = function(list, callback) {
   const storage = [];
 
   _.each(list, function(v, i, list) {
-    storage.push(v, i, list);
+    storage.push(callback(v, i, list));
   })
 
   return storage;
