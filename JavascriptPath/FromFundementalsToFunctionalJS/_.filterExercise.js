@@ -8,9 +8,9 @@ _.filter = function(arr, cb) {
   //loop through arr
   for (let i = 0; i = arr.length; i++) {
     //check if cb returns true
-    if (cb(list[i])) {
+    if (cb(list[i], i, arr) === true) {
       //if return true push into array
-      storage.push(list[i]);
+      storage.push(arr[i]);
     }
   }
   // return array
