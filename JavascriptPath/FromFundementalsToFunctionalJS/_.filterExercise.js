@@ -22,9 +22,9 @@ const _ = {};
 _.filter = function(arr, cb) {
   const storage = [];
 
-  _.each(arr, function(val, i, list) {
-    if (cb(val, i, list) === true) {
-      storage.push(val);
+  _.each(arr, function(item, i, list) {
+    if (cb(item, i, list) === true) {
+      storage.push(item);
     }
   });
 
