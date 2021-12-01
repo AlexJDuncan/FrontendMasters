@@ -8,7 +8,7 @@ const _ = {};
 //   //loop through arr
 //   for (let i = 0; i = arr.length; i++) {
 //     //check if cb returns true
-//     if (cb(list[i], i, arr) === true) {
+//     if (cb(arr[i], i, arr) === true) {
 //       //if return true push into array
 //       storage.push(arr[i]);
 //     }
@@ -23,7 +23,7 @@ _.filter = function(arr, cb) {
   const storage = [];
 
   _.each(arr, function(item, i, list) {
-    if (cb(item, i, list) === true) {
+    if (cb(item[i], i, list) === true) {
       storage.push(item);
     }
   });
